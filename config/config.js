@@ -4,8 +4,8 @@ const config = {
     development: {
         port: process.env.PORT || PORT,
         // dbURL: 'mongodb://localhost:27017/Used-Furniture',
-        dbURL: process.env.CLOUD_DB_URL,
-        origin: ['http://localhost:5555', 'http://localhost:4200']
+        dbURL: process.env.DB_URL_CREDENTIALS,
+    origin: ['https://used-furniture-680be.web.app']
     },
     production: {
         port: process.env.PORT || 3000,
