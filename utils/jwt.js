@@ -3,7 +3,7 @@ require('dotenv').config();  // Това трябва да е най-горе в
 
 
 const jwt = require('jsonwebtoken');
-const secret = process.env.JWT_SECRET || JWT_SECRET;
+const secret = process.env.JWT_SECRET || rVc1dnSI2uWpxq21T78IXnNiGOIaAy31;
 
 function createToken(data) {
     return jwt.sign(data, secret, { expiresIn: '1d' });
