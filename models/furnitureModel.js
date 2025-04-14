@@ -36,7 +36,7 @@ const furnitureSchema = new mongoose.Schema({
         required: [true, 'Image URL is required.'],
         validate: {
           validator: function (v) {
-            return /^https?:\/\//;
+            return /^(https?:\/\/.*\.(?:png|jpg|jpeg|gif))$/i.test(v);
           },
           message: 'Invalid image URL format.',
         },
