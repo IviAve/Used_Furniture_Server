@@ -7,7 +7,7 @@ const cookieSecret = process.env.COOKIESECRET || 'SoftUni';
 module.exports = (app) => {
     app.use(express.json());
 
-    app.use(cookieParser(cookieSecret));
+    app.use(cookieParser());
 
     app.use(express.static(path.resolve(__basedir, 'static')));
 
